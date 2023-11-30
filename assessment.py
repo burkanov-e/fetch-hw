@@ -14,8 +14,6 @@ def check_health(endpoint):
             timeout=5,  # Adjust timeout as needed
         )
 
-        print(response.ok, response.elapsed.total_seconds())
-
         return response.ok and response.elapsed.total_seconds() < 0.5
 
     except requests.RequestException:

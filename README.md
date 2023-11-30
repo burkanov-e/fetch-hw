@@ -9,7 +9,7 @@ Before running the script, ensure you have the following installed:
 - Python (version 3.x recommended)
   - [Install Python (python.org)](https://www.python.org/downloads/)
   
-- Required Python packages (install using `pip3 install -r requirements.txt`):
+- Required Python packages
   - requests
   - PyYAML
 
@@ -25,7 +25,12 @@ Before running the script, ensure you have the following installed:
 2. Install the required Python packages.
 
     ```bash
-    pip3 install -r requirements.txt
+    pip3 install requests PyYAML
+    ```
+  - **Note:** You might need to upgrade pip
+
+    ```bash
+    python3 -m pip install --upgrade pip
     ```
 
 3. **(Optional)** Modify the input file (`input.yaml`) according to your needs. By default, a sample is provided. When you modify, please make sure you follow YAML syntax.
@@ -51,7 +56,7 @@ Before running the script, ensure you have the following installed:
 Run the script with the following command:
 
 ```bash
-python3 api_availability_checker.py
+python3 assessment.py
 ```
 
 
